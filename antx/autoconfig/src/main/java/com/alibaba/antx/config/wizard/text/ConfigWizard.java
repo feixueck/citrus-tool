@@ -210,7 +210,7 @@ public class ConfigWizard {
 
         // 装入默认值，以简化用户的操作
         if (continueWizard) {
-            fillDefaultValues();
+//            fillDefaultValues();
         }
 
         // 开始wizard
@@ -220,7 +220,8 @@ public class ConfigWizard {
 
             // 打印group内容
             printGroup();
-
+            // 装入默认值，以简化用户的操作
+            fillDefaultValues();
             // 提示输入
             int toStep = processMenu();
 
